@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
 
 # directory is package
 # python file is module
 
-from pyproj.tests import helloworld
+from pyproj.tests import helloworld, test
 
 # 所有的模块都有一个内置属性 __name__
 # 如果 import 一个模块，那么模块__name__ 的值通常为模块文件名，不带路径或者文件扩展名
@@ -11,4 +12,6 @@ from pyproj.tests import helloworld
 
 
 if __name__ == "__main__":
+    test.printModuleName()
+    test.printModuleName(helloworld)
     helloworld.sayhi()
