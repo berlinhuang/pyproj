@@ -3,20 +3,12 @@
 # 文件夹 package
 # py文件 module
 
-from pyproj.tests import helloworld, test, testmodule
-import  sys, os
 
+from pyproj.tests import test
 
-def module():
-    testmodule.getModuleAtrributes(sys.modules[__name__])
-    testmodule.getModuleAtrributes(test)
-
-def main():
-    helloworld.sayhi()
-    module()
 
 if __name__ == "__main__":
-    main()
+    test.main()
 
 
 
