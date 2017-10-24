@@ -6,7 +6,8 @@
 
 from pyproj.tests import testmodule
 from pyproj.tests import helloworld
-import  sys, os
+import  sys
+os = __import__("os")
 
 def hello():
     helloworld.sayhi()
@@ -15,7 +16,7 @@ def gethelp():
     testmodule.getModuleHelp(sys)
 
 def getdir():
-    testmodule.getModuleDir(sys)
+    testmodule.getModuleDir(os)
 
 def module():
     testmodule.getModuleAtrributes(sys.modules[__name__]) #current module
@@ -30,6 +31,6 @@ def main():
     # hello()
     # module()
     # gethelp()
-    # getdir()
-    getsyspath()
+    getdir()
+    # getsyspath()
 

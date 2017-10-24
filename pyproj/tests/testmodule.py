@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 
 def getModuleAtrributes( modulename ):
     print("list module %s :" % modulename.__name__)
