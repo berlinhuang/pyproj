@@ -7,6 +7,8 @@ from pyproj.base import loop
 from pyproj.base import dictset
 from pyproj.base.func import func
 
+from pyproj.base.advance import advance
+
 def docharencode():
     charencode.ordchr()
     charencode.unicode()
@@ -36,4 +38,5 @@ def main():
     # docondition()
     # doloop()
     # dodictset()
-    func()
+    # func()
+    advance.advance()
