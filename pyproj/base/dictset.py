@@ -35,8 +35,13 @@ d[key] = 'a list' #error
 '''
 
 
-def set():
+def testset():
+    #传入的参数[1, 2, 3]是一个list，而显示的{1, 2, 3}只是告诉你这个set内部有1，2，3这3个元素，显示的顺序也不表示set是有序的
     s = set([1, 2, 3])
+    print s
+    #重复元素在set中自动被过滤
+    s = set([1, 1, 2, 2, 3, 3])
+    print s
 
 
 

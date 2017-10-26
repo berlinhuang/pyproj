@@ -25,7 +25,7 @@ def doloop():
 
 def dodictset():
     dictset.dict()
-
+    dictset.testset()
 
 def main():
     # docharencode()
