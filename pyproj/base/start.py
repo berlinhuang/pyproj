@@ -8,6 +8,8 @@ from pyproj.base import dictset
 from pyproj.base.func import func
 
 from pyproj.base.advance import advance
+from pyproj.base.funcprog import funcprog
+
 
 def docharencode():
     charencode.ordchr()
@@ -39,4 +41,5 @@ def main():
     # doloop()
     # dodictset()
     # func()
-    advance.advance()
+    # advance.advance()
+    funcprog.funcprog()
