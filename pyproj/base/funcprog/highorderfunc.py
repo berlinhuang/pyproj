@@ -52,7 +52,36 @@ def str2float(s):
 
     #return reduce(fn,map(char2num,s)) # reduce(fn,[1,5,7,9,0.1,1,2,3,4,])
 
+
+def is_odd(n):
+    return n%2 == 1
+
+def not_empty(s):
+    return s and s.strip()
+
+
+def _odd_iter(): # 注意这是一个生成器，并且是一个无限序列 3开始的奇数序列
+    n = 1
+    while True:
+        n = n + 2
+        yield n
+
+
+def _not_divisible(n): # 筛选函数
+    return lambda x: x%n > 0
+
+def primes():
+    yield 2
+    it = _odd_iter()# 初始序列
+    while True:
+        n = next(it)
+        yield n
+        it = filter(_not_divisible(n),it) # 构造新序列
+
+
+
 def highorderfunc():
+    # 函数名也是变量
     print addabs(-5,7,abs)
     # map()函数接收两个参数，一个是函数，一个是Iterable，map将传入的函数依次作用到序列的每个元素，并把结果作为新的Iterator返回
     r = map(f,[1,2,3,4,5,6,7,8])
@@ -77,8 +106,14 @@ def highorderfunc():
     print("3579=",prod([3,5,7,9]))
 
     print str2float('1579.1234')
-# 函数名也是变量
 
 
+    print list(filter(is_odd,[1,2,4,5,6,9,10,15]))
+    print list(filter(not_empty,['A','','B',None,'C','']))
 
 
+    for n in primes():
+        if n < 20:
+            print n
+        else:
+            break

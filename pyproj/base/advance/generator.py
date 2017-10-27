@@ -10,7 +10,7 @@ def fib(max):
         n = n + 1
     return 'done fib'
 
-
+# 如果一个函数定义中包含yield关键字，那么这个函数就不再是一个普通函数，而是一个generator
 def fibyield(max):
     print "begin fib"
     n, a, b = 0,0,1
