@@ -78,7 +78,18 @@ def primes():
         yield n
         it = filter(_not_divisible(n),it) # 构造新序列
 
+def by_name(t):
+    return str.lower(t[0])
 
+def by_score(t):
+    return t[1]
+
+# FIXME: the cmp param seems to be cancelled in python3
+# def comp(t1,t2):
+#     if t1[0]==t2[0]:
+#         return t1[1]<t2[1]
+#     else:
+#         return t1[0]>t2[0]
 
 def highorderfunc():
     # 函数名也是变量
@@ -112,8 +123,26 @@ def highorderfunc():
     print list(filter(not_empty,['A','','B',None,'C','']))
 
 
-    for n in primes():
-        if n < 20:
-            print n
-        else:
-            break
+    # for n in primes():
+    #     if n < 20:
+    #         print n
+    #     else:
+    #         break
+
+    print sorted([36,5,-12,9,-21])
+
+    print sorted([36,5,-12,9,-21],key = abs)
+
+    print sorted(['bob','about','Zoo','Credit'])
+
+    print sorted(['bob', 'about', 'Zoo', 'Credit'], key = str.lower )
+
+    print sorted(['bob', 'about', 'Zoo', 'Credit'], key = str.lower, reverse = True )
+
+    L = [('Bob', 75), ('Adam', 92), ('Bart', 66), ('Lisa', 88),('Lisa', 81)]
+    print sorted( L, key = by_name) # 第一维度升序
+    print sorted( L, key = lambda x:(x[0],x[1])) # 第一维度升序，第二维度也是升来排序
+    print sorted( L, key = lambda x:(x[0],x[1]), reverse=True)  # 第一维度逆序，第二维度也是逆序排序
+
+    # print sorted( L, cmp=comp)
+
