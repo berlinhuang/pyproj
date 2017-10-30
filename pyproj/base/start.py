@@ -10,6 +10,8 @@ from pyproj.base.func import func
 from pyproj.base.advance import advance
 from pyproj.base.funcprog import funcprog
 
+from pyproj.base.module import usemodule
+from pyproj.base.object import object
 
 def docharencode():
     charencode.ordchr()
@@ -42,4 +44,6 @@ def main():
     # dodictset()
     # func()
     # advance.advance()
-    funcprog.funcprog()
+    # funcprog.funcprog()
+    # usemodule.test()
+    object.object()
