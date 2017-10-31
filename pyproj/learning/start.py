@@ -14,7 +14,7 @@ from pyproj.learning.mysql import start as mysql
 
 def main():
     # base.main()
-    # func()
+    # func.func()
     # advance.main()
     # funcprog.main()
     # usemodule.test()

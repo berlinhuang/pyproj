@@ -32,7 +32,8 @@ def dodictset():
 
 def main():
      docharencode()
-     dolisttuple()
-     docondition()
-     doloop()
-     dodictset()
+     # dolisttuple()
+     # docondition()
+     # doloop()
+     # dodictset()
+
