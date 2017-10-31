@@ -9,7 +9,7 @@ from pyproj.learning.module import usemodule
 from pyproj.learning.object import start as object
 from pyproj.learning.net import tcp,udp
 from pyproj.learning.mysql import start as mysql
-
+from pyproj.learning.multitask import  start as multitask
 
 
 def main():
@@ -19,4 +19,5 @@ def main():
     # funcprog.main()
     # usemodule.test()
     # object.main()
-    mysql.operate()
+    # mysql.operate()
+    multitask.main()
