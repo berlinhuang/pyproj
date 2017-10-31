@@ -10,7 +10,7 @@ from pyproj.learning.funcprog import decrator
 
 from pyproj.learning.funcprog import partialfunc
 
-def funcprog():
+def main():
     # highorderfunc.highorderfunc()
     # returnfunc.main()
     # anonymousfunc.main()

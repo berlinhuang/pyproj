@@ -7,7 +7,7 @@ from pyproj.learning.advance import listcompr
 from pyproj.learning.advance import generator
 from pyproj.learning.advance import iterator
 
-def advance():
+def main():
     # slice.slice()
     # iteration.iter()
     # listcompr.listcomp()
