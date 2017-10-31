@@ -1,17 +1,18 @@
 # -*- coding: utf-8 -*-
 
-from pyproj.base import charencode
-from pyproj.base import listtuple
-from pyproj.base import condition as cond
-from pyproj.base import loop
-from pyproj.base import dictset
-from pyproj.base.func import func
+from pyproj.learning import charencode
+from pyproj.learning import listtuple
+from pyproj.learning import condition as cond
+from pyproj.learning import loop
+from pyproj.learning import dictset
+from pyproj.learning.func import func
 
-from pyproj.base.advance import advance
-from pyproj.base.funcprog import funcprog
+from pyproj.learning.advance import advance
+from pyproj.learning.funcprog import funcprog
 
-from pyproj.base.module import usemodule
-from pyproj.base.object import object
+from pyproj.learning.module import usemodule
+from pyproj.learning.object import object
+from pyproj.learning.mysql import dataoperate
 
 def docharencode():
     charencode.ordchr()
@@ -46,4 +47,5 @@ def main():
     # advance.advance()
     # funcprog.funcprog()
     # usemodule.test()
-    object.object()
+    # object.object()
+    dataoperate.operate()
