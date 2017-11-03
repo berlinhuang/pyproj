@@ -10,6 +10,7 @@ from pyproj.learning.object import start as object
 from pyproj.learning.net import tcp,udp
 from pyproj.learning.mysql import start as mysql
 from pyproj.learning.multitask import  start as multitask
+from pyproj.learning.buildinmodule import start as buildin
 
 
 def main():
@@ -20,4 +21,5 @@ def main():
     # usemodule.test()
     # object.main()
     # mysql.operate()
-    multitask.main()
+    # multitask.main()
+    buildin.main()
