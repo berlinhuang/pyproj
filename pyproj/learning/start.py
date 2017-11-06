@@ -11,6 +11,7 @@ from pyproj.learning.net import tcp,udp
 from pyproj.learning.mysql import start as mysql
 from pyproj.learning.multitask import  start as multitask
 from pyproj.learning.buildinmodule import start as buildin
+from pyproj.learning.advancedobj import start as advancedobj
 
 
 def main():
@@ -22,4 +23,5 @@ def main():
     # object.main()
     # mysql.operate()
     # multitask.main()
-    buildin.main()
+    # buildin.main()
+    advancedobj.main()
