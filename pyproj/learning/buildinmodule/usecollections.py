@@ -60,7 +60,7 @@ class LastUpdateOrderedDict(OrderedDict):
         self._capacity = capacity
 
     def __setitem__(self, key, value):
-        containsKey = 1 if key in self else 0 
+        containsKey = 1 if key in self else 0
         if len(self) - containsKey >= self._capacity:
             last = self.poitem(last = False)
             print('remove:', last)
