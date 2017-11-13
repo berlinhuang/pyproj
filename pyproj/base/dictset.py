@@ -42,6 +42,29 @@ def testset():
     #重复元素在set中自动被过滤
     s = set([1, 1, 2, 2, 3, 3])
     print s
+    s.add(4)
+    print s
+    s.remove(4)
+    print s
+    s1 = set([1,2,3])
+    s2 = set([2, 3, 4])
+    print s1&s2
+    print s1|s2
+
+def obj():
+    #可变对象
+    #list  dict  set
+    a = ['c','b','a']
+    a.sort()
+    print a
+    #不可变对象
+    #str  tuple  int  float  number
+    a ='abc'
+    b = a.replace('a','A')
+    print b
+    print a
+
+
 
 
 
