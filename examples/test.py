@@ -3,12 +3,13 @@
 # 文件夹 package
 # py文件 module
 
+import pyproj
 
-from pyproj.tests import test
+from examples.test import utils
 
 
 if __name__ == "__main__":
-    test.main()
+    utils.main()
 
 
 
